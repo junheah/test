@@ -114,7 +114,7 @@
 </head>
 
 <body class="staticrypt-body">
-<div class="staticrypt-page">
+<div class="staticrypt-page" id='staticrypt-main' style="display: none;">
     <div class="staticrypt-form">
         <div class="staticrypt-instructions">
             <img src='mark.png'/>
@@ -140,6 +140,13 @@
 <footer class="staticrypt-footer">
     <p class="pull-right">Created with <a href="https://robinmoisson.github.io/staticrypt">StatiCrypt</a></p>
 </footer>
+
+<script>
+    window.onload = function(){
+        var a = document.getElementById('staticrypt-main');
+        a.style.display = 'block';
+    }
+</script>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js" integrity="sha384-lp4k1VRKPU9eBnPePjnJ9M2RF3i7PC30gXs70+elCVfgwLwx1tv5+ctxdtwxqZa7" crossorigin="anonymous"></script>
